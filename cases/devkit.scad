@@ -443,6 +443,13 @@ mpc5748Board = [
         [  130, 60  ],
         [    0, 60], 
         ];
+        
+mpc5748Board = [ 
+        [  0.0, 0 ],
+        [  130, 0 ],
+        [  130, 60  ],
+        [    0, 60], 
+        ];
 
 
 boardShapes = [    
@@ -463,11 +470,12 @@ ngComponents = [
     [[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
     ];
 
-ngComponents= [];
+mpc5748gComponents = [];
+mpc5744pComponents = [];
 
 components = [
-    ngComponents, // DEVKIT-MPC5748G
-    0,      //DEVKIT-MPC5744P
+    mpc5748gComponents, // DEVKIT-MPC5748G
+    mpc5744pComponents,      //DEVKIT-MPC5744P
     ];
 
 /****************************** NON-BOARD PARAMETERS ******************************/
@@ -476,7 +484,8 @@ woodscrewHeadRad = 4.6228;       //Number 8 wood screw head radius
 woodscrewThreadRad = 2.1336;      //Number 8 wood screw thread radius
 woodscrewHeadHeight = 2.8448;//Number 8 wood screw head height
 
-//enclosure();
-rotate([0, 180, 0])
-translate([0, 0, 0])
-enclosureLid();
+enclosure();
+
+//rotate([0, 180, 0])
+//translate([0, 0, 0])
+//enclosureLid();
