@@ -1,12 +1,8 @@
 # slic3r profile to use.
-ifndef PROFILE
-	PROFILE := fine3_2
-endif
-# Find all SCAD files.
-SCAD := $(wildcard *.scad)
+PROFILE := fine3_2
 
-# Generate STL files.
-STL := $(patsubst %.scad,%.stl,${SCAD})
+# Find all STL files.
+STL := $(wildcard *.stl)
 
 # Generate GCode
 GSUFFIX = _${PROFILE}.gcode
@@ -25,9 +21,9 @@ stl: ${STL}
 %.stl: %.scad
 	openscad -o ${@} ${<}
 
-${GPREFIX}%${GSUFFIX}: %.stl
+${GPREFIX}%${GSUFFIX}: %.stl ../slic3r/${PROFILE}.ini
 	slic3r --threads=8 --load=../slic3r/${PROFILE}.ini --output=${@} ${<}
 
 .PHONY: clean
 clean:
-	rm -rf ${STL} ${GCODE}
+	rm -rf ${GCODE}
