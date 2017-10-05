@@ -425,11 +425,11 @@ arduinoHeight = 11 + pcbHeight + 0;
 
 /********************************* MOUNTING HOLES *********************************/
 devkitHoles = [
-        [  35.3395, 53.71300 ],
-        [  28.93400, 5.21],
-         [ 121.71700, 5.21],
-         [115.52200, 53.36100],
-        ];
+  [12.218499999999999, 5.7465],
+ [93.4465, 6.104500000000001],
+ [6.3694999999999995, 53.9095],
+ [99.6555, 54.082499999999996]
+ ];
 
 boardHoles = [ 
         devkitHoles,        // DEVKIT-MPC5748G
@@ -470,7 +470,8 @@ ngComponents = [
     [[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
     ];
 
-mpc5748gComponents = [];
+mpc5748gComponents = [[[1.27, 17.526, 0], [headerWidth, headerWidth * 10, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
+[[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]];
 mpc5744pComponents = [];
 
 components = [
@@ -484,7 +485,14 @@ woodscrewHeadRad = 4.6228;       //Number 8 wood screw head radius
 woodscrewThreadRad = 2.1336;      //Number 8 wood screw thread radius
 woodscrewHeadHeight = 2.8448;//Number 8 wood screw head height
 
-enclosure();
+OFFSET=50;
+translate([0, -OFFSET, 0]) {
+enclosure(0);
+}
+
+translate([0, OFFSET, 0]) {
+enclosure(1);
+}
 
 //rotate([0, 180, 0])
 //translate([0, 0, 0])
