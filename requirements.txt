@@ -1,0 +1,6 @@
+wheel
+setuptools
+pip
+jupyter
+notebook
+nbconvert
