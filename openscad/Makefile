@@ -1,5 +1,7 @@
 # slic3r profile to use.
-PROFILE := fine3
+ifndef PROFILE
+	PROFILE = fine3_2
+endif
 
 # Find all SCAD files.
 SCAD := $(wildcard *.scad)
