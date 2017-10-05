@@ -487,6 +487,8 @@ woodscrewHeadRad = 4.6228;       //Number 8 wood screw head radius
 woodscrewThreadRad = 2.1336;      //Number 8 wood screw thread radius
 woodscrewHeadHeight = 2.8448;//Number 8 wood screw head height
 
+woodscrewHeadHeight = 10;
+
 OFFSET=50;
 translate([0, -OFFSET, 0]) {
 enclosure(0);
