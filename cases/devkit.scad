@@ -496,6 +496,10 @@ translate([0, OFFSET, 0]) {
 enclosure(1);
 }
 
-//translate([-OFFSET, 0, 3])
-rotate([180, 0, 0])
-enclosureLid();
+translate([-20, 2*OFFSET, 3])
+rotate([0, 180, 90])
+enclosureLid(0);
+
+translate([-100, 2*OFFSET, 3])
+rotate([0, 180, 90])
+enclosureLid(1);
