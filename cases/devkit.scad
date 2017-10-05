@@ -470,8 +470,9 @@ ngComponents = [
     [[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
     ];
 
-mpc5748gComponents = [[[1.27, 17.526, 0], [headerWidth, headerWidth * 10, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
-[[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]];
+mpc5748gComponents = [
+[[1.27, 17.526, 0], [headerWidth, headerWidth * 10, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
+[[40.7, -1.8, 0], [9.0, 13.2, 10.9], [-1, 0, 0], POWER, "Red" ]];
 mpc5744pComponents = [];
 
 components = [
