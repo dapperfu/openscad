@@ -436,26 +436,25 @@ arduinoHeight = 11 + pcbHeight + 0;
 
 //Uno, Leonardo holes
 unoHoles = [
-		[  2.54, 15.24 ],
-		[  17.78, 66.04 ],
-		[  45.72, 66.04 ],
-		[  50.8, 13.97 ],
-		[  30, 20 ]
+		[  35.3395, 53.71300 ],
+		[  28.93400, 5.21],
+         [ 121.71700, 5.21],
+         [115.52200, 53.36100],
 		];
 
 boardHoles = [ 
-		ngHoles,        //NG
-		ngHoles,        //Diecimila
-		ngHoles,        //Duemilanove
+		0,        //NG
+		0,        //Diecimila
+		0,        //Duemilanove
 		unoHoles,       //Uno
-		unoHoles,       //Leonardo
-		megaHoles,      //Mega
-		dueHoles,       //Mega 2560
-		dueHoles,       //Due
+		0,       //Leonardo
+		0,      //Mega
+		0,       //Mega 2560
+		0,       //Due
 		0,              //Yun
 		0,              //Intel Galileo
        	        0,              //Tre
-                unoHoles        //Ethernet
+                0        //Ethernet
 		];
 
 /********************************** BOARD SHAPES **********************************/
@@ -466,22 +465,11 @@ ngBoardShape = [
         [    0, 60], 
 		];
 
-megaBoardShape = [ 
-		[  0.0, 0.0 ],
-		[  53.34, 0.0 ],
-		[  53.34, 99.06 ],
-		[  52.07, 99.06 ],
-		[  49.53, 101.6 ],
-		[  15.24, 101.6 ],
-		[  12.7, 99.06 ],
-		[  2.54, 99.06 ],
-		[  0.0, 96.52 ]
-		];
 
 boardShapes = [ 	
-		ngBoardShape,   //NG
-		ngBoardShape,   //Diecimila
-		ngBoardShape,   //Duemilanove
+		0,   //NG
+		0,   //Diecimila
+		0,   //Duemilanove
 		ngBoardShape,   //Uno
 		0,   //Leonardo
 		0, //Mega
@@ -490,7 +478,7 @@ boardShapes = [
 		0,              //Yun
 		0,              //Intel Galileo
 		0,              //Tre
-        0,    //Ethernet
+         0,    //Ethernet
 		];	
 
 /*********************************** COMPONENTS ***********************************/
@@ -506,74 +494,21 @@ ngComponents = [
 	[[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
 	];
 
-etherComponents = [
-	[[1.27, 17.526, 0], [headerWidth, headerWidth * 10, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
-	[[1.27, 44.45, 0], [headerWidth, headerWidth * 8, headerHeight ], [0, 0, 1], HEADER_F, "Black" ],
-	[[49.53, 26.67, 0], [headerWidth, headerWidth * 8, headerHeight ], [0, 0, 1], HEADER_F, "Black" ],
-	[[49.53, 49.53, 0], [headerWidth, headerWidth * 6, headerHeight ], [0, 0, 1], HEADER_F, "Black" ],
-	[[7.20, -4.4, 0],[16, 22, 13],[0, -1, 0], RJ45, "Green" ],
-	[[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
-	];
-
-leonardoComponents = [
-	[[1.27, 17.526, 0], [headerWidth, headerWidth * 10, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
-	[[1.27, 44.45, 0], [headerWidth, headerWidth * 8, headerHeight ], [0, 0, 1], HEADER_F, "Black" ],
-	[[49.53, 26.67, 0], [headerWidth, headerWidth * 8, headerHeight ], [0, 0, 1], HEADER_F, "Black" ],
-	[[49.53, 49.53, 0], [headerWidth, headerWidth * 6, headerHeight ], [0, 0, 1], HEADER_F, "Black" ],
-	[[11.5, -1.1, 0],[7.5, 5.9, 3],[0, -1, 0], USB, "LightGray" ],
-	[[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
-	];
-
-megaComponents = [
-	[[1.27, 22.86, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[1.27, 44.45, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[1.27, 67.31, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[49.53, 31.75, 0], [headerWidth, headerWidth * 6, headerHeight ], [0, 0, 1], HEADER_F, "Black"],
-	[[49.53, 49.53, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[49.53, 72.39, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[1.27, 92.71, 0], [headerWidth * 18, headerWidth * 2, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[9.34, -6.5, 0],[12, 16, 11],[0, -1, 0], USB, "LightGray"],
-	[[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
-	];
-
-mega2560Components = [
-	[[1.27, 17.526, 0], [headerWidth, headerWidth * 10, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
-	[[1.27, 44.45, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
-	[[1.27, 67.31, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
-	[[49.53, 26.67, 0], [headerWidth, headerWidth * 8, headerHeight ], [0, 0, 1], HEADER_F, "Black" ],
-	[[49.53, 49.53, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
-	[[49.53, 72.39, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
-	[[1.27, 92.71, 0], [headerWidth * 18, headerWidth * 2, headerHeight], [0, 0, 1], HEADER_F, "Black" ],
-	[[9.34, -6.5, 0],[12, 16, 11],[0, -1, 0], USB, "LightGray" ],
-	[[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
-	];
-
-dueComponents = [
-	[[1.27, 17.526, 0], [headerWidth, headerWidth * 10, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[1.27, 44.45, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[1.27, 67.31, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[49.53, 26.67, 0], [headerWidth, headerWidth * 8, headerHeight ], [0, 0, 1], HEADER_F, "Black"],
-	[[49.53, 49.53, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[49.53, 72.39, 0], [headerWidth, headerWidth * 8, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[1.27, 92.71, 0], [headerWidth * 18, headerWidth * 2, headerHeight], [0, 0, 1], HEADER_F, "Black"],
-	[[11.5, -1.1, 0], [7.5, 5.9, 3], [0, -1, 0], USB, "LightGray" ],
-	[[27.365, -1.1, 0], [7.5, 5.9, 3], [0, -1, 0], USB, "LightGray" ],
-	[[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
-	];
+ngComponents= [];
 
 components = [
-	ngComponents,		//NG
-	ngComponents,		//Diecimila
-	ngComponents,		//Duemilanove
+	0,		//NG
+	0,		//Diecimila
+	0,		//Duemilanove
 	ngComponents,		//Uno
-	leonardoComponents,	//Leonardo
-	megaComponents,		//Mega
-	mega2560Components,	//Mega 2560
-	dueComponents,   	//Due
+	0,	//Leonardo
+	0,		//Mega
+	0,	//Mega 2560
+	0,   	//Due
 	0,                 	//Yun
 	0,		        //Intel Galileo
 	0,			//Tre
-        etherComponents         //Ethernet
+        0         //Ethernet
 	];
 
 /****************************** NON-BOARD PARAMETERS ******************************/
