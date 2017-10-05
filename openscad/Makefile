@@ -27,7 +27,7 @@ stl: ${STL}
 	openscad -o ${@} ${<}
 
 ${GPREFIX}%${GSUFFIX}: %.stl
-	slic3r --threads=8 --load=../slic3r/${PROFILE}.ini --output=${@} ${<}
+	slic3r --print-center=150,150 --load=../slic3r/${PROFILE}.ini --output=${@} ${<}
 
 .PHONY: clean
 clean:
