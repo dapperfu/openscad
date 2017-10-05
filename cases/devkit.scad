@@ -302,7 +302,6 @@ module components( boardType = DEVKIT5748G, component = ALL, extension = 0, offs
                         + ([1,1,1] - components[boardType][i][2]) * offset * 2 
                     ) {                 
                     translate( position ) color( components[boardType][i][4] ) 
-                        echo(dimensions);
                         cube( dimensions );
                 }
             }
