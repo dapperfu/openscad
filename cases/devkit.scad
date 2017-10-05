@@ -496,6 +496,6 @@ translate([0, OFFSET, 0]) {
 enclosure(1);
 }
 
-translate([-OFFSET, 0, 0])
-rotate([0, 180, 0])
+//translate([-OFFSET, 0, 3])
+rotate([180, 0, 0])
 enclosureLid();
