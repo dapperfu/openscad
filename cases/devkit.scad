@@ -39,7 +39,7 @@ module arduino(boardType = DEVKIT5748G) {
 }
 
 //Creates a bumper style enclosure that fits tightly around the edge of the PCB.
-module bumper( boardType = DEVKIT5748G, mountingHoles = false ) {
+module bumper( boardType = DEVKIT5748G, mountingHoles = true ) {
 	bumperBaseHeight = 2;
 	bumperHeight = bumperBaseHeight + pcbHeight + 0.5;
 	dimensions = boardDimensions(boardType);
@@ -405,18 +405,9 @@ function boardDimensions(boardType = DEVKIT5748G) =
 
 /******************************* BOARD SPECIFIC DATA ******************************/
 //Board IDs
-NG = 0;
-DIECIMILA = 1;
-DUEMILANOVE = 2;
+DEVKIT5748_G = 0;
+DEVKIT5744P = 0;
 DEVKIT5748G = 3;
-LEONARDO = 4;
-MEGA = 5;
-MEGA2560 = 6;
-DUE = 7;
-YUN = 8; 
-INTELGALILEO = 9;
-TRE = 10;
-ETHERNET = 11;
 
 /********************************** MEASUREMENTS **********************************/
 pcbHeight = 1.7;
