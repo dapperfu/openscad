@@ -460,15 +460,10 @@ boardHoles = [
 
 /********************************** BOARD SHAPES **********************************/
 ngBoardShape = [ 
-		[  0.0, 0.0 ],
-		[  53.34, 0.0 ],
-		[  53.34, 66.04 ],
-		[  50.8, 66.04 ],
-		[  48.26, 68.58 ],
-		[  15.24, 68.58 ],
-		[  12.7, 66.04 ],
-		[  1.27, 66.04 ],
-		[  0.0, 64.77 ]
+        [  0.0, 0 ],
+        [  130, 0 ],
+        [  130, 60  ],
+        [    0, 60], 
 		];
 
 megaBoardShape = [ 
@@ -488,14 +483,14 @@ boardShapes = [
 		ngBoardShape,   //Diecimila
 		ngBoardShape,   //Duemilanove
 		ngBoardShape,   //Uno
-		ngBoardShape,   //Leonardo
-		megaBoardShape, //Mega
-		megaBoardShape, //Mega 2560
-		megaBoardShape, //Due
+		0,   //Leonardo
+		0, //Mega
+		0, //Mega 2560
+		0, //Due
 		0,              //Yun
 		0,              //Intel Galileo
 		0,              //Tre
-                ngBoardShape    //Ethernet
+        0,    //Ethernet
 		];	
 
 /*********************************** COMPONENTS ***********************************/
