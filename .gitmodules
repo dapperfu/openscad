@@ -1,0 +1,3 @@
+[submodule "cases/pin_connectors"]
+	path = cases/pin_connectors
+	url = https://github.com/tbuser/pin_connectors.git
