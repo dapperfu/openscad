@@ -302,6 +302,7 @@ module components( boardType = DEVKIT5748G, component = ALL, extension = 0, offs
                         + ([1,1,1] - components[boardType][i][2]) * offset * 2 
                     ) {                 
                     translate( position ) color( components[boardType][i][4] ) 
+                        echo(dimensions);
                         cube( dimensions );
                 }
             }
@@ -495,6 +496,6 @@ translate([0, OFFSET, 0]) {
 enclosure(1);
 }
 
-//rotate([0, 180, 0])
-//translate([0, 0, 0])
-//enclosureLid();
+translate([-OFFSET, 0, 0])
+rotate([0, 180, 0])
+enclosureLid();
