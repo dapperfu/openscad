@@ -394,15 +394,33 @@ function pcbPosition(boardType = DEVKIT5748G) = minPoint(boardShapes[boardType])
 function pcbDimensions(boardType = DEVKIT5748G) = maxPoint(boardShapes[boardType]) - minPoint(boardShapes[boardType]) + [0, 0, pcbHeight];
 
 //Returns the position of the box containing all components and its dimensions
-function componentsPosition(boardType = DEVKIT5748G) = minCompPoint(components[boardType]) + [0, 0, pcbHeight];
-function componentsDimensions(boardType = DEVKIT5748G) = maxCompPoint(components[boardType]) - minCompPoint(components[boardType]);
+function componentsPosition(boardType = DEVKIT5748G) =
+    minCompPoint(components[boardType]) + [0, 0, pcbHeight];
+function componentsDimensions(boardType = DEVKIT5748G) =
+    maxCompPoint(components[boardType]) - minCompPoint(components[boardType]);
 
 //Returns the position and dimensions of the box containing the pcb board
 function boardPosition(boardType = DEVKIT5748G) = 
-    minCompPoint([[pcbPosition(boardType), pcbDimensions(boardType)], [componentsPosition(boardType), componentsDimensions(boardType)]]);
+    minCompPoint(
+    [
+    [pcbPosition(boardType), pcbDimensions(boardType)],
+    [componentsPosition(boardType), componentsDimensions(boardType)]
+    ]
+    );
+
 function boardDimensions(boardType = DEVKIT5748G) = 
-    maxCompPoint([[pcbPosition(boardType), pcbDimensions(boardType)], [componentsPosition(boardType), componentsDimensions(boardType)]]) 
-    - minCompPoint([[pcbPosition(boardType), pcbDimensions(boardType)], [componentsPosition(boardType), componentsDimensions(boardType)]]);
+    maxCompPoint(
+    [
+    [pcbPosition(boardType), pcbDimensions(boardType)],
+    [componentsPosition(boardType), componentsDimensions(boardType)]
+    ]
+    ) 
+    - minCompPoint(
+    [
+    [pcbPosition(boardType), pcbDimensions(boardType)],
+    [componentsPosition(boardType), componentsDimensions(boardType)]
+    ]
+    );
 
 /******************************* BOARD SPECIFIC DATA ******************************/
 //Board IDs
@@ -416,11 +434,7 @@ headerWidth = 2.54;
 headerHeight = 9;
 mountingHoleRadius = 3.2 / 2;
 
-ngWidth = 53.34;
-leonardoDepth = 68.58 + 1.1;           //PCB depth plus offset of USB jack (1.1)
-ngDepth = 68.58 + 6.5;
-megaDepth = 101.6 + 6.5;               //Coding is my business and business is good!
-dueDepth = 101.6 + 1.1;
+mpc5748Width = 53.34;
 
 arduinoHeight = 11 + pcbHeight + 0;
 
@@ -471,9 +485,7 @@ ngComponents = [
     [[40.7, -1.8, 0], [9.0, 13.2, 10.9], [0, -1, 0], POWER, "Black" ]
     ];
 
-mpc5748gComponents = [
-    [[0, 40, 0],[2, 5, 2],[-1, 0, 0], USB, "LightGray" ],
-];
+mpc5748gComponents = [];
 mpc5744pComponents = [];
 
 components = [
@@ -486,8 +498,6 @@ components = [
 woodscrewHeadRad = 4.6228;       //Number 8 wood screw head radius
 woodscrewThreadRad = 2.1336;      //Number 8 wood screw thread radius
 woodscrewHeadHeight = 2.8448;//Number 8 wood screw head height
-
-woodscrewHeadHeight = 10;
 
 OFFSET=50;
 translate([0, -OFFSET, 0]) {
