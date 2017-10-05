@@ -437,14 +437,14 @@ boardHoles = [
         ];
 
 /********************************** BOARD SHAPES **********************************/
-mpc5748Board = [ 
+mpc5748gBoard = [ 
         [  0.0, 0 ],
         [  130, 0 ],
         [  130, 60  ],
         [    0, 60], 
         ];
         
-mpc5748Board = [ 
+mpc5744pBoard = [ 
         [  0.0, 0 ],
         [  130, 0 ],
         [  130, 60  ],
@@ -453,8 +453,8 @@ mpc5748Board = [
 
 
 boardShapes = [    
-        mpc5748Board,   // DEVKIT-MPC5748G
-        0,        //DEVKIT-MPC5744P
+        mpc5748gBoard,   // DEVKIT-MPC5748G
+        mpc5744pBoard,   //DEVKIT-MPC5744P
         ];  
 
 /*********************************** COMPONENTS ***********************************/
