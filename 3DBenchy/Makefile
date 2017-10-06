@@ -1,15 +1,21 @@
 # slic3r profile to use.
-PROFILE := fine3_2
-
+ifndef PROFILE
+	PROFILE := fine3_2
+endif
 # Find all STL files.
-STL := $(wildcard *.stl)
-
+ifndef STL
+	STL := $(wildcard *.stl)
+endif
 # Generate GCode
-GSUFFIX = _${PROFILE}.gcode
-GPREFIX = 
+ifndef GSUFFIX
+	GSUFFIX = _${PROFILE}.gcode
+endif
+
+ifndef GPREFIX
+	GPREFIX =
+endif
+
 GCODE := $(patsubst %.stl,${GPREFIX}%${GSUFFIX},${STL})
-
-
 # Default to building the stl files.
 .DEFAULT: gcode
 .PHONY: gcode
