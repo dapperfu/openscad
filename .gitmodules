@@ -1,3 +1,6 @@
 [submodule "cases/pin_connectors"]
 	path = cases/pin_connectors
 	url = https://github.com/tbuser/pin_connectors.git
+[submodule "openscad_DEVKIT-MPC57xx"]
+	path = openscad_DEVKIT-MPC57xx
+	url = https://github.com/jed-frey/openscad_DEVKIT-MPC57xx
