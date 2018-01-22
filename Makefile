@@ -4,12 +4,27 @@ SCAD ?= $(shell find . -name "*.scad" | sort)
 # STL Files to build.
 STL := $(patsubst %.scad,%.stl,${SCAD})
 
+# PNG Preview images.
+PNG := $(patsubst %.scad,%.png,${SCAD})
+
+
 # Default to building the stl files.
 .DEFAULT: all
 .PHONY: all
-all: ${STL}
+all: pngs stls
+
+
+.PHONY: pngs
+pngs: ${PNG}
+
+%.png: %.scad
+	openscad -o ${@} --imgsize=1024,1024 ${<}
+
 
 # Build the STL files with OpenSCAD.
+.PHONY: stls
+stls: ${STL}
+
 %.stl: %.scad
 	openscad -o ${@} ${<}
 
@@ -30,8 +45,8 @@ bootstrap:
 
 # slic3r profiles to use.
 FILAMENT ?= temp_H250-240_B70-40
-PRINT ?= fine3_2
-PRINTER ?= CR10_0.4mm
+PRINT ?= fine3_3
+PRINTER ?= CR10
 
 PRINT_CENTER?=50,50
 
