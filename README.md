@@ -11,8 +11,10 @@ http://ci.do.exstatic.org/job/openscad/
 
 TODO: "HIL" tests with the 3D printer.
 
-# Badges
+# Instructions.
 
-[![Build Status](https://ci.do.exstatic.org/job/openscad/badge/icon)](https://ci.do.exstatic.org/job/openscad)
-
-[![Build Status](https://ci.do.exstatic.org/buildStatus/icon?job=openscad)](https://ci.do.exstatic.org/job/openscad)
+    git clone
+    git submodule init
+    git submodule update
+    make # Convert scad models to stl.
+    make gcode # Generate g-code.
