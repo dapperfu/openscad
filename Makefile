@@ -47,6 +47,7 @@ bootstrap:
 FILAMENT ?= temp_H250-240_B70-40
 PRINT ?= fine3_3
 PRINTER ?= CR10
+NOZZLE ?= 0.4
 
 PRINT_CENTER?=50,50
 
@@ -60,7 +61,7 @@ STL ?= $(shell find . -name "*.stl" | sort)
 # Setup a directory structure for the output gcode.
 GPREFIX := build/${PRINTER}/
 # Add suffix to base .stl
-GSUFFIX := -${PRINTER}-${FILAMENT}-${PRINT}
+GSUFFIX := -${PRINTER}-${NOZZLE}-${FILAMENT}-${PRINT}
 
 # Determine the gcode files to make.
 GCODE := $(patsubst %.stl,${GPREFIX}%${GSUFFIX}.gcode,${STL})
@@ -74,6 +75,7 @@ ${GPREFIX}%${GSUFFIX}.gcode: %.stl
 	@echo Slicing: ${<}
 
 	@slic3r --print-center=${PRINT_CENTER} \
+	  --nozzle-diameter=${NOZZLE} \
 	  --threads=${THREADS} \
 	  --load=slic3r_profiles/filament/${FILAMENT} \
 	  --load=slic3r_profiles/print/${PRINT} \
