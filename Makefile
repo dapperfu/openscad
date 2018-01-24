@@ -11,7 +11,7 @@ PNG := $(patsubst %.scad,%.png,${SCAD})
 # Default to building the stl files.
 .DEFAULT: all
 .PHONY: all
-all: pngs stls
+all: pngs stls gcode
 
 
 # Images
@@ -46,7 +46,7 @@ bootstrap:
 
 # slic3r profiles to use.
 FILAMENT ?= temp_H250-240_B70-40
-PRINT ?= fine3_3
+PRINT ?= fine3_2
 PRINTER ?= CR10
 NOZZLE ?= 0.4
 
