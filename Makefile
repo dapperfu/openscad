@@ -14,11 +14,12 @@ PNG := $(patsubst %.scad,%.png,${SCAD})
 all: pngs stls
 
 
+# Images
 .PHONY: pngs
 pngs: ${PNG}
 
 %.png: %.scad
-	openscad -o ${@} --imgsize=1024,1024 ${<}
+	openscad -o ${@} --imgsize=1024,1024 --projection=o ${<}
 
 
 # Build the STL files with OpenSCAD.
