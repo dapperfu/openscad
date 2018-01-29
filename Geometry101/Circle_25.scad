@@ -1,4 +1,4 @@
-edge = 50;
+edge = 25;
 
 cylinder(
     r = edge/2,

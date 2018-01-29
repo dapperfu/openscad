@@ -1,4 +1,5 @@
-edge = 50;
+edge = 25;
+
 cube(
     [edge,
     edge,
