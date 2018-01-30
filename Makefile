@@ -42,4 +42,4 @@ update:
 bootstrap:
 	sudo apt-get install slic3r openscad
 
-include ../slic3r_profiles/slice.mk
+include slic3r_profiles/slice.mk
