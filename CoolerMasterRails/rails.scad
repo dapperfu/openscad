@@ -13,26 +13,22 @@ hole2_x = hole1_x+45.3-hole_d;
 hole3_x = hole1_x+105.2-hole_d;
 hole_y = width/2;
 
-//difference()
+module pin(height, hole_d, position)
 {
-color("red") {
-    cube([length, width, height]);
-}
-{
-
-module (height, hole_d, location) {
-    color("blue")
+    color("green")
     {
-        translate(v = [0, 0, 0])
+        translate(v = position)
         {
             union()
             {
-                cylinder(h=height,
-                         d=hole_d,
-                         center=false);
+                translate(v = [0, 0, -height]) {
+                    cylinder(h=3*height,
+                             d=hole_d,
+                             center=false);
+                }
                 translate(v = [0, 0, height/2])
                 {
-                    cylinder(h=height,
+                    cylinder(h=2*height,
                              d=2*hole_d,
                              center=false);
                 }
@@ -41,20 +37,14 @@ module (height, hole_d, location) {
     }
 }
 
-translate(v = [hole1_x, hole_y, 0]) {
-cylinder(h=3*height,
-         d=hole_d,
-         center=true);
+difference()
+{
+color("red") {
+  cube([length, width, height]);
 }
-translate(v = [hole2_x, hole_y, 0]) {
-cylinder(h=3*height,
-         d=hole_d,
-         center=true);
-}
-translate(v = [hole3_x, hole_y, 0]) {
-cylinder(h=3*height,
-         d=hole_d,
-         center=true);
-}
-}
+
+
+pin(height, hole_d, [hole1_x, hole_y, 0]);
+pin(height, hole_d, [hole2_x, hole_y, 0]);
+pin(height, hole_d, [hole3_x, hole_y, 0]);
 }
