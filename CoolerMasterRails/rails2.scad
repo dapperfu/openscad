@@ -18,7 +18,6 @@ fillet_r = width/2;
 
 difference()
 {
-
 color("green") {
     hull() {
         translate([fillet_r, fillet_r, 0]) 
@@ -55,8 +54,11 @@ color("green") {
 color("red") 
 {
     pin(height, hole_d, [hole1_x, hole_y, 0]);
-    pin(height, hole_d, [hole2_x, hole_y, 0]);
     pin(height, hole_d, [hole3_x, hole_y, 0]);
+    translate(v=[hole2_x, hole_y, -height/2]) {
+        cylinder(
+            d=hole_d,
+            h=2*height);
+    }
 }
-
 }
