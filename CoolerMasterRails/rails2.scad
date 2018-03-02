@@ -14,25 +14,49 @@ hole2_x = hole1_x+45.3-hole_d;
 hole3_x = hole1_x+105.2-hole_d;
 hole_y = width/2;
 
-fillet_r = width/4;
+fillet_r = width/2;
 
-union()
+difference()
 {
-color("red") {
-  cube([length, width, height]);
-}
+
 color("green") {
-    translate([fillet_r, fillet_r, 0]) 
-    {
-        cylinder(
-            r=fillet_r,
-            h=2*height
-        );
-    }
+    hull() {
+        translate([fillet_r, fillet_r, 0]) 
+        {
+            cylinder(
+                r=fillet_r,
+                h=height
+            );
+        }
+        translate([length-fillet_r, fillet_r, 0]) 
+        {
+            cylinder(
+                r=fillet_r,
+                h=height
+            );
+        }
+        translate([fillet_r, width-fillet_r, 0]) 
+        {
+            cylinder(
+                r=fillet_r,
+                h=height
+            );
+        }
+        translate([length-fillet_r, width-fillet_r, 0]) 
+        {
+            cylinder(
+                r=fillet_r,
+                h=height
+            );
+        }
+    }  
 }
 
+color("red") 
+{
+    pin(height, hole_d, [hole1_x, hole_y, 0]);
+    pin(height, hole_d, [hole2_x, hole_y, 0]);
+    pin(height, hole_d, [hole3_x, hole_y, 0]);
+}
 
-//pin(height, hole_d, [hole1_x, hole_y, 0]);
-//pin(height, hole_d, [hole2_x, hole_y, 0]);
-//pin(height, hole_d, [hole3_x, hole_y, 0]);
 }
