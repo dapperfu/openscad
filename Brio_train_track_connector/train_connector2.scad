@@ -1,5 +1,7 @@
 $fn=80;
 
+nozzle_size = 0.2;
+
 // Config
 pin_height = 10;
 pin_diameter = 11.1;
