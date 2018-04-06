@@ -15,17 +15,16 @@ all: stl png gcode
 png: ${PNG}
 
 %.png: %.scad
-	openscad -o ${@} --imgsize=1024,1024 --projection=o ${<}
+	-openscad -o ${@} --imgsize=1024,1024 --projection=o ${<}
 
 # Build the STL files with OpenSCAD.
 .PHONY: stl
 stl: ${STL}
 
 %.stl: %.scad
-	openscad -o ${@} ${<}
-	
+	-openscad -o ${@} ${<}
+
 ## Utility Targets
-	
 # Clean up the g-code.
 .PHONY: clean
 clean:
