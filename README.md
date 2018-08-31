@@ -12,6 +12,8 @@ GitHub repository for my OpenSCAD models.
 
 1. Run ```make bootstrap``` to install requirements on apt-get based Linux distribution.
 
+   Note: Ubuntu 18.04 needs openscad ppa's installed ```sudo add-apt-repository ppa:openscad/releases```
+
 1. Add or modify any ```.scad``` model with openscad.
 
 1. Run ```make```. 
