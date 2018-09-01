@@ -13,7 +13,7 @@ keyway=4.76;
 
 
 //difference()
-union()
+difference()
 {
 translate([ 0.00, 0.00, length/2]) {
 color("red")
