@@ -13,8 +13,8 @@ keyway=4.76;
 
 
 //difference()
-
-
+union()
+{
 translate([ 0.00, 0.00, length/2]) {
 color("red")
 {
@@ -23,7 +23,6 @@ color("red")
     circle(d=diameter);
     }
 }
-
 translate([diameter/2, 0, 0]) {
     color("blue")
     {
@@ -32,6 +31,7 @@ translate([diameter/2, 0, 0]) {
             square(4.76, center=true);
         }
     }
+}
 }
 }
     
