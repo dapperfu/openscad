@@ -18,19 +18,19 @@ keyway=4.76;
 
 color("blue")
 cylinder(h=length, d1=diameter, d2=diameter*.65, center=true);
-/*
+
 translate([0, 0, -length*.99])
 cylinder(h=length, d=diameter, center=true);
-*/
 
-translate([0, 50 , 0]) {
+
+translate([0, 10, 0]) {
 color("blue")
 cylinder(h=length, d=diameter, center=true);
 
 color("red")
 translate([diameter/2, 0, 0])
 cube([keyway, keyway, length], center=true);
-}
+
 
 /*
 rotate_extrude(convexity = 10) {
@@ -65,5 +65,4 @@ color(red) {
         ],
         center=true);
 }
-
 */
