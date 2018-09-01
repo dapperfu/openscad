@@ -12,8 +12,10 @@ keyway=4.76;
 
 
 
-//difference() 
+//difference()
+linear_extrude(length) {
 circle(d=diameter);
+}
  
     
 /*
