@@ -10,7 +10,8 @@ diameter=19.1;
 length=61.7;
 keyway=4.76;
 
-
+translante([0,0,length/2])
+{
 //difference() 
 {
     color("blue")
@@ -29,4 +30,5 @@ keyway=4.76;
             }
         }
     }
+}
 }
