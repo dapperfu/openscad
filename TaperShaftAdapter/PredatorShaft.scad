@@ -10,6 +10,7 @@ diameter=19.1;
 length=61.7;
 keyway=4.76;
 
+/*
 translate([ 0.00, 0.00, length/2]) {
 color("red")
 {
@@ -28,6 +29,7 @@ translate([diameter/2, 0, 0]) {
     }
 }
 }
+*/
     
 /*
 ,        color("red")
