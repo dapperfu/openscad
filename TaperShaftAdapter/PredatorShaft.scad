@@ -13,8 +13,12 @@ keyway=4.76;
 
 
 //difference()
-linear_extrude(length) {
-circle(d=diameter);
+color("red")
+{
+    linear_extrude(length) 
+    {
+    circle(d=diameter);
+    }
 }
  
     
