@@ -10,10 +10,6 @@ diameter=19.1;
 length=61.7;
 keyway=4.76;
 
-
-
-difference()
-{
 translate([ 0.00, 0.00, length/2]) {
 color("red")
 {
@@ -25,12 +21,11 @@ color("red")
 translate([diameter/2, 0, 0]) {
     color("blue")
     {
-        linear_extrude(length*1.2, center=true)
+        linear_extrude(length, center=true)
         {
             square(4.76, center=true);
         }
     }
-}
 }
 }
     
