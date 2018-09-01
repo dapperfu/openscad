@@ -23,7 +23,8 @@ translate([0, 0, -length*.99])
 cylinder(h=length, d=diameter, center=true);
 
 
-translate([0, 50, 0]) {
+translate([0, 50
+c, 0]) {
 color("blue")
 cylinder(h=length, d=diameter, center=true);
 
