@@ -13,15 +13,8 @@ keyway=4.76;
 
 
 //difference() 
-translate([0, 10, 0])) {
-    color("red")
-    {
-        linear_extrude(length, center=true)
-        {
-            circle(d=diameter);
-        }
-    }
-}
+circle(d=diameter);
+ 
     
 /*
 ,        color("red")
@@ -32,4 +25,4 @@ translate([0, 10, 0])) {
             }
         }
     }
-    *
+    */
