@@ -14,14 +14,15 @@ keyway=4.76;
 
 //difference() 
 {
-    color("blue")
+    translate([0, 10, 0])) {
+    color("red")
     {
         linear_extrude(length, center=true)
         {
             circle(d=diameter);
         }
     }
-       
+}
 }
     
 /*
