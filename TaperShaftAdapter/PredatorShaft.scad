@@ -11,17 +11,17 @@ length=61.7;
 keyway=4.76;
 
 
-linear_extrude(10, center=true)
+color("blue")
 {
-    color("blue")
+    linear_extrude(10, center=true)
     {
-    circle(d=diameter);
+        circle(d=diameter);
     }
 }
-linear_extrude(11, center=true)
+color("red")
 {
-    color("red")
+    linear_extrude(11, center=true)
     {
-    square(4.76, center=true);
+        square(4.76, center=true);
     }
 }
