@@ -15,6 +15,7 @@ keyway=4.76;
 //difference()
 
 
+translate([ 0.00, 0.00, length/2]) {
 color("red")
 {
     linear_extrude(length, center=true) 
@@ -23,12 +24,13 @@ color("red")
     }
 }
 
-translate([0, 0, 0]) {
-color("blue")
-{
-    linear_extrude(length*1.1, center=true)
+translate([diameter/2, 0, 0]) {
+    color("blue")
     {
-        square(4.76, center=true);
+        linear_extrude(length, center=true)
+        {
+            square(4.76, center=true);
+        }
     }
 }
 }
