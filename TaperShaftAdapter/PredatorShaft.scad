@@ -10,6 +10,12 @@ diameter=19.1;
 length=61.7;
 keyway=4.76;
 
+color("blue")
+cylinder(length, d=diameter, center=true);
+
+color("red")
+cube([keyway, keyway, length], center=true);
+
 /*
 translate([ 0.00, 0.00, length/2]) {
 color("red")
