@@ -11,7 +11,8 @@ length=61.7;
 keyway=4.76;
 
 
-difference() {
+//difference() 
+{
     color("blue")
     {
         linear_extrude(length, center=true)
@@ -19,7 +20,7 @@ difference() {
             circle(d=diameter);
         }
     }
-    translate(10,0,0) {
+    translate([diameter/2,0,0]) {
         color("red")
         {
             linear_extrude(length*1.1, center=true)
