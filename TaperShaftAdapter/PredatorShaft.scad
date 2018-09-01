@@ -13,14 +13,22 @@ keyway=4.76;
 
 
 //difference()
+
+
 color("red")
 {
-    linear_extrude(length) 
+    linear_extrude(length, center=true) 
     {
     circle(d=diameter);
     }
 }
- 
+color("blue")
+{
+    linear_extrude(length*1.1, center=true)
+    {
+        square(4.76, center=true);
+    }
+}
     
 /*
 ,        color("red")
