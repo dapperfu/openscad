@@ -6,6 +6,10 @@ Leaf blower fan (and old motor) had a tapered shaft.
 
 New motor has a straight shaft.
 
+New Motor: Harbor Freight Predator 212cc
+Old Motor: Coleman 10HP Tecumseh
+Blower: 880A http://www.mackissic.com/Leaf%20Blowers.html
+
 */
 
 $fn=100;
