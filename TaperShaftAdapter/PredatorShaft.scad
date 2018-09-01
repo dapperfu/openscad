@@ -22,12 +22,15 @@ color("red")
     circle(d=diameter);
     }
 }
+
+translate([0, 0, 0]) {
 color("blue")
 {
     linear_extrude(length*1.1, center=true)
     {
         square(4.76, center=true);
     }
+}
 }
     
 /*
