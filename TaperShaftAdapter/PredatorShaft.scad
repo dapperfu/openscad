@@ -19,11 +19,13 @@ difference() {
             circle(d=diameter);
         }
     }
-    color("red")
-    {
-        linear_extrude(length*1.1, center=true)
+    translate(10,0,0) {
+        color("red")
         {
-            square(4.76, center=true);
+            linear_extrude(length*1.1, center=true)
+            {
+                square(4.76, center=true);
+            }
         }
     }
 }
