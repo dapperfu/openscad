@@ -23,6 +23,15 @@ translate([0, 0, -length*.99])
 cylinder(h=length, d=diameter, center=true);
 
 
+translate([0, 50, 0]) {
+color("blue")
+cylinder(h=length, d=diameter, center=true);
+
+color("red")
+translate([diameter/2, 0, 0])
+cube([keyway, keyway, length], center=true);
+}
+
 /*
 rotate_extrude(convexity = 10) {
     translate([2, 0, 0]) {

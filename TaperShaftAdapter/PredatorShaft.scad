@@ -14,7 +14,7 @@ color("blue")
 cylinder(h=length, d=diameter, center=true);
 
 color("red")
-translate([diameter, 0, 0])
+translate([diameter/2, 0, 0])
 cube([keyway, keyway, length], center=true);
 
 /*
