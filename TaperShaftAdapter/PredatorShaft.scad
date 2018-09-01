@@ -21,8 +21,11 @@ keyway=4.76;
             circle(d=diameter);
         }
     }
-    translate([diameter/2,0,0]) {
-        color("red")
+       
+}
+    
+/*
+,        color("red")
         {
             linear_extrude(length*1.1, center=true)
             {
@@ -30,4 +33,4 @@ keyway=4.76;
             }
         }
     }
-}
+    *
