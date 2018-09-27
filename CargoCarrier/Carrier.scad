@@ -57,7 +57,6 @@ cylinder(
     $fn=20);
    
 }
-}
 
 translate([0, edge/2, edge/2]) {
 rotate(a = [0, 90, 0]) { 
@@ -68,3 +67,7 @@ rotate(a = [0, 90, 0]) {
     $fn=20);
 }
 }
+
+
+}
+
