@@ -72,7 +72,7 @@ translate([0, edge, 0]) {
     tube_unit();
 }
 
-for(variable = [0 : edge : len]) {
+for(variable = [0 : edge : edge]) {
     translate([0, variable, 0]) {
     tube_unit();
 }
