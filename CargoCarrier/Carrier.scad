@@ -26,6 +26,8 @@ pillars= 10;
 
 debug=2;
 
+function section() {
+
 difference()
 
 {
@@ -69,5 +71,6 @@ rotate(a = [0, 90, 0]) {
 }
 
 
+}
 }
 
