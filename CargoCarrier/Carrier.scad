@@ -26,7 +26,7 @@ pillars= 10;
 
 debug=2;
 
-difference()
+//difference()
 
 {
 color("red") {
