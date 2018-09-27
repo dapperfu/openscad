@@ -5,6 +5,7 @@ Link: https://www.menards.com/main/p-1444432406788.htm
 */
 thickness = 1.984375 ; /* 14 Gauge */
 mm_per_inch = 25.4; 
+in_to_mm = mm_per_inch;
 kg_per_pound = 0.453592;
 
 
