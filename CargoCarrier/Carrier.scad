@@ -46,7 +46,7 @@ translate([thickness, 0-debug/2, thickness]) {
     }
 }
 
-translate([edge/2, 0, 0]) {
+translate([edge/2, edge/2, 0]) {
 
 cylinder(
     r=hole_size/2,
