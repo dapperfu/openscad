@@ -5,46 +5,33 @@ Keyway 	3/16 in. / 4.76 mm
 https://www.harborfreight.com/65-hp-212cc-ohv-horizontal-shaft-gas-engine-epa-69730.html
 
 */
-$fn=12;
+$fn=50;
 diameter=19.1;
 length=61.7;
 keyway=4.76;
 
+translate([0, 0, length/2]) 
+{
+difference()
+    {
 color("blue")
 cylinder(h=length, d=diameter, center=true);
 
 color("red")
 translate([diameter/2, 0, 0])
-cube([keyway, keyway, length], center=true);
+cube([keyway, keyway, length*1.1], center=true);
+}
+}
 
-/*
-translate([ 0.00, 0.00, length/2]) {
-color("red")
+translate([0, diameter*1.1, length/2]) 
 {
-    linear_extrude(length, center=true) 
+union()
     {
-    circle(d=diameter);
-    }
-}
-translate([diameter/2, 0, 0]) {
-    color("blue")
-    {
-        linear_extrude(length, center=true)
-        {
-            square(4.76, center=true);
-        }
-    }
+color("blue")
+cylinder(h=length, d=diameter, center=true);
+
+color("red")
+translate([diameter/2, 0, 0])
+cube([keyway, keyway, length ], center=true);
 }
 }
-*/
-    
-/*
-,        color("red")
-        {
-            linear_extrude(length*1.1, center=true)
-            {
-                square(4.76, center=true);
-            }
-        }
-    }
-    */
