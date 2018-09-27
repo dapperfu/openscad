@@ -59,7 +59,7 @@ cylinder(
 }
 }
 
-rotate(a = [0, 0, 0]) { 
+rotate(a = [0, 90, 0]) { 
    cylinder(
     r=hole_size/2,
     h=edge+debug,
