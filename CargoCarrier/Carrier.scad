@@ -68,11 +68,8 @@ hole_cylinder();
 
 
 tube_unit();
-translate([0, edge, 0]) {
-    tube_unit();
-}
 
-for(variable = [0 : edge : edge]) {
+for(variable = [0 : edge : edge*5]) {
     translate([0, variable, 0]) {
     tube_unit();
 }
