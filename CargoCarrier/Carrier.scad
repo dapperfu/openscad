@@ -66,7 +66,5 @@ rotate(a = [0, 90, 0]) {
 hole_cylinder();
 }
 }
-
-
 }
 
