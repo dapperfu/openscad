@@ -36,6 +36,7 @@ cylinder(
 }
 
 module tube_unit() {
+difference() {
 color("red") {
 cube(
     [edge,
@@ -65,12 +66,15 @@ hole_cylinder();
 }
 }
 }
+}
 
 
 tube_unit();
 
+union() {
 for(variable = [0 : edge : edge*5]) {
     translate([0, variable, 0]) {
     tube_unit();
+}
 }
 }
