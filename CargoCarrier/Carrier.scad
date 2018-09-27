@@ -48,8 +48,7 @@ translate([thickness, 0-debug/2, thickness]) {
     }
 }
 
-translate([edge/2, edge/2, 0]) {
-module hole_cylinder() [
+module hole_cylinder() {
 cylinder(
     r=hole_size/2,
     h=edge+debug,
@@ -57,7 +56,9 @@ cylinder(
     $fn=20);
    
 }
-]
+
+translate([edge/2, edge/2, 0]) {
+
 
 translate([0, edge/2, edge/2]) {
 rotate(a = [0, 90, 0]) { 
