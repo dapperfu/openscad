@@ -24,7 +24,7 @@ echo(mass);
 edge = 50;
 pillars= 10;
 
-debug=0;
+debug=2;
 
 
 color("red") {
