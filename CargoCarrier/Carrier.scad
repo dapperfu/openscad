@@ -72,7 +72,7 @@ hole_cylinder();
 tube_unit();
 
 union() {
-for(variable = [0 : edge : edge*5]) {
+for(variable = [0 : edge : 72*in_to_mm]) {
     translate([0, variable, 0]) {
     tube_unit();
 }
