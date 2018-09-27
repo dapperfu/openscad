@@ -36,7 +36,7 @@ cylinder(
 }
 
 //difference()
-
+module tube_unit() {
 {
 color("red") {
 cube(
@@ -57,10 +57,6 @@ translate([thickness, 0-debug/2, thickness]) {
     }
 }
 
-
-
-
-
 translate([edge/2, edge/2, 0]) {
 hole_cylinder();
 }
@@ -68,7 +64,6 @@ hole_cylinder();
 translate([0, edge/2, edge/2]) {
 rotate(a = [0, 90, 0]) { 
 hole_cylinder();
-
 }
 }
 
