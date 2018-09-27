@@ -26,7 +26,9 @@ pillars= 10;
 
 debug=2;
 
+difference()
 
+{
 color("red") {
 cube(
     [edge,
@@ -54,4 +56,5 @@ cylinder(
     center=false,
     $fn=20);
    
+}
 }
