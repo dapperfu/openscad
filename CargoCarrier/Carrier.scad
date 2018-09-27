@@ -49,7 +49,7 @@ translate([thickness, 0-debug/2, thickness]) {
 }
 
 translate([edge/2, edge/2, 0]) {
-function hole_cylinder() [
+module hole_cylinder() [
 cylinder(
     r=hole_size/2,
     h=edge+debug,
