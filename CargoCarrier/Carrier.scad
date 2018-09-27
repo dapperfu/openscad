@@ -58,3 +58,12 @@ cylinder(
    
 }
 }
+
+rotate(a=180, v=[0,1,0]) { 
+   cylinder(
+    r=hole_size/2,
+    h=edge+debug,
+    center=false,
+    $fn=20);
+   
+}
