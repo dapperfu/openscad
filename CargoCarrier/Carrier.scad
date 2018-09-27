@@ -26,6 +26,15 @@ pillars= 10;
 
 debug=2;
 
+module hole_cylinder() {
+cylinder(
+    r=hole_size/2,
+    h=edge+debug,
+    center=false,
+    $fn=20);
+   
+}
+
 //difference()
 
 {
@@ -48,17 +57,13 @@ translate([thickness, 0-debug/2, thickness]) {
     }
 }
 
-module hole_cylinder() {
-cylinder(
-    r=hole_size/2,
-    h=edge+debug,
-    center=false,
-    $fn=20);
-   
-}
 
-//translate([edge/2, edge/2, 0]) {
+
+
+
+translate([edge/2, edge/2, 0]) {
 hole_cylinder();
+}
 
 translate([0, edge/2, edge/2]) {
 rotate(a = [0, 90, 0]) { 
