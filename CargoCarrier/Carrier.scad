@@ -47,7 +47,7 @@ translate([thickness, 0-debug/2, thickness]) {
 }
 
 cylinder(
-    r=10/2,
+    r=hole_size/2,
     h=edge+debug,
     center=false,
     $fn=20);
