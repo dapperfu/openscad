@@ -35,9 +35,7 @@ cylinder(
    
 }
 
-//difference()
 module tube_unit() {
-{
 color("red") {
 cube(
     [edge,
@@ -68,3 +66,4 @@ hole_cylinder();
 }
 }
 
+tube_unit();
