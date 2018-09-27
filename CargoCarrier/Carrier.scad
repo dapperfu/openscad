@@ -48,6 +48,6 @@ translate([thickness, 0-debug/2, thickness]) {
 
 cylinder(
     r=10/2,
-    h=edge,
+    h=edge+debug,
     center=false,
-    $fn=100);
+    $fn=20);
