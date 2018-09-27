@@ -59,11 +59,12 @@ cylinder(
 }
 }
 
+translate([edge/2, edge/2, 0]) {
 rotate(a = [0, 90, 0]) { 
    cylinder(
     r=hole_size/2,
     h=edge+debug,
     center=false,
     $fn=20);
-   
+}
 }
