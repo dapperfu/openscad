@@ -27,7 +27,7 @@ translate( v = [mount_thickness,
         mount_cube();
     }
 }
-}
+
 
 translate([0,mount_edge-laser_edge/2,mount_height*.9]) {
     color("red")
@@ -38,6 +38,7 @@ translate([0,mount_edge-laser_edge/2,mount_height*.9]) {
             cylinder(h=mount_thickness,d=laser_mount_hole,center=false);
         }
     }
+}
 }
 /*
 translate( v = [0,
