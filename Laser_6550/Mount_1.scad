@@ -43,7 +43,7 @@ translate([0,mount_edge-laser_edge/2,mount_height*.9]) {
 }
 
 
-translate([mount_edge-laser_edge/2, 0,mount_height*.9]) {
+translate([mount_edge-laser_edge/2, 0,mount_height*.5]) {
     color("blue")
     rotate([0,90,90]) {
         hull() {
