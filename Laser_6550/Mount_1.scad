@@ -1,5 +1,6 @@
 mount_edge = 45;
 laser_edge = 40;
+gantry_mount_hole=4;
 laser_mount_hole=8;
 mount_height = 70;
 mount_thickness = 5;
