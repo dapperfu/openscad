@@ -1,8 +1,15 @@
 color("red") {
-    rotate([0,90,0]) {
+    rotate([0,0,45]) {
         cube([10, 10, 10], center=true);
     }
 }
+
+color("blue") {
+    rotate([0,0,45]) {
+        cube([10, 10, 10], center=true);
+    }
+}
+
 
 
 /*
