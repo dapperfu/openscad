@@ -47,9 +47,9 @@ translate([0,mount_edge-laser_edge/2,mount_height*.9]) {
     color("blue")
     rotate([0,0,0]) {
         hull() {
-            translate([mount_height*.75,0,0]) 
-                cylinder(h=mount_thickness,d=laser_mount_hole,center=false);
-            cylinder(h=mount_thickness,d=laser_mount_hole,center=false);
+            translate([20,0,0]) 
+                cylinder(h=mount_thickness,d=gantry_mount_hole,center=false);
+            cylinder(h=mount_thickness,d=gantry_mount_hole,center=false);
         }
     }
 }
