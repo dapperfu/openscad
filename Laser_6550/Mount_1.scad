@@ -29,13 +29,13 @@ translate( v = [mount_thickness,
 }
 }
 
-translate([mount_edge-laser_edge/2,0,20]) {
+translate([0,mount_edge-laser_edge/2,20]) {
     color("red")
     rotate([0,90,0]) {
         hull() {
             translate([15,0,0]) 
-                cylinder(h=20,d=10,center=false);
-            cylinder(h=20,d=10,center=false);
+                cylinder(h=mount_thickness,d=10,center=false);
+            cylinder(h=mount_thickness,d=10,center=false);
         }
     }
 }
