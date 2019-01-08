@@ -20,17 +20,12 @@ translate( v = [0,
                 0] ) {
     mount_cube();
 }
-
-color("red") {
     translate( v = [mount_thickness,
                     mount_thickness,
                     0] ) {
-        cube(
-            [gantry_edge,
-            laser_edge,
-            mount_height,
-            ],
-            center=false);
+                        color("red") {
+
+        mount_cube();
     }
 }
 
