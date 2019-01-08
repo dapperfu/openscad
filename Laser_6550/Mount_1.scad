@@ -1,3 +1,5 @@
+mount_edge = 45;
+
 gantry_edge = 45;
 laser_edge = 40;
 laser_mount_hole=8;
@@ -8,8 +10,8 @@ translate( v = [0,
                 0,
                 0] ) {
     cube(
-        [gantry_edge,
-        laser_edge+mount_thickness,
+        [mount_edge,
+        mount_edge,
         mount_height,
         ],
         center=false);
