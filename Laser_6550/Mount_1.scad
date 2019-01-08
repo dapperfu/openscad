@@ -15,18 +15,20 @@ module mount_cube ( ) {
     center=false);
 }
 
+difference() {
 translate( v = [0,
                 0,
                 0] ) {
     mount_cube();
 }
-    translate( v = [mount_thickness,
+translate( v = [mount_thickness,
                     mount_thickness,
                     0] ) {
                         color("red") {
 
         mount_cube();
     }
+}
 }
 
 translate([0,0,20]) {
