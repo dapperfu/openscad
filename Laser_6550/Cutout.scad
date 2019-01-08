@@ -5,9 +5,11 @@ color("red") {
 }
 
 color("blue") {
+    translate([20, 0, 0]) {
     rotate([0,0,45]) {
         cube([10, 10, 10], center=true);
     }
+}
 }
 
 
