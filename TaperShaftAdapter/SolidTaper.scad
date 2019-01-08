@@ -11,17 +11,18 @@ Old Motor: Coleman 10HP Tecumseh
 Blower: 880A http://www.mackissic.com/Leaf%20Blowers.html
 
 */
+
 $fn=12;
 diameter=19.1;
 length=61.7;
 keyway=4.76;
 
+/*
 color("blue")
-cylinder(h=length, d1=diameter, d2=diameter*.65, center=true);
-
+cylinder(h=length, d1=diameter, d2=diameter, center=true);
 translate([0, 0, -length*.99])
 cylinder(h=length, d=diameter, center=true);
-
+*/
 
 translate([0, 10, 0]) {
 color("blue")
@@ -30,6 +31,8 @@ cylinder(h=length, d=diameter, center=true);
 color("red")
 translate([diameter/2, 0, 0])
 cube([keyway, keyway, length], center=true);
+}
+
 
 
 /*

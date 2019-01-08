@@ -3,3 +3,4 @@
 **/*.gcode
 **/*.png
 **/build/*
+**/.ipynb_checkpoints/*
