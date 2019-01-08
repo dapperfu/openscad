@@ -29,7 +29,7 @@ translate( v = [mount_thickness,
 }
 }
 
-translate([0,0,20]) {
+translate([mount_edge-laser_edge/2,0,20]) {
     color("red")
     rotate([0,90,0]) {
         hull() {
