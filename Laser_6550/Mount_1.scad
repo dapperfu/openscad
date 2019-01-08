@@ -28,6 +28,7 @@ translate( v = [mount_thickness,
         mount_cube();
     }
 }
+}
 
 
 translate([0,mount_edge-laser_edge/2,mount_height*.9]) {
@@ -40,6 +41,17 @@ translate([0,mount_edge-laser_edge/2,mount_height*.9]) {
         }
     }
 }
+
+
+translate([0,mount_edge-laser_edge/2,mount_height*.9]) {
+    color("red")
+    rotate([0,90,0]) {
+        hull() {
+            translate([mount_height*.75,0,0]) 
+                cylinder(h=mount_thickness,d=laser_mount_hole,center=false);
+            cylinder(h=mount_thickness,d=laser_mount_hole,center=false);
+        }
+    }
 }
 /*
 translate( v = [0,
