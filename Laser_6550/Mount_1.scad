@@ -6,7 +6,7 @@ laser_mount_hole=8;
 mount_height = 70;
 mount_thickness = 5;
 
-module name ( parameters ) { 
+module mount_cube ( ) { 
     cube(
     [mount_edge,
     mount_edge,
@@ -18,12 +18,7 @@ module name ( parameters ) {
 translate( v = [0,
                 0,
                 0] ) {
-    cube(
-        [mount_edge,
-        mount_edge,
-        mount_height,
-        ],
-        center=false);
+    mount_cube();
 }
 
 color("red") {
