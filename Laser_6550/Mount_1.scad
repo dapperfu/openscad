@@ -1,5 +1,5 @@
 
-$fs=100;
+$fn=100;
 mount_edge = 45;
 laser_edge = 40;
 gantry_mount_hole=4;
