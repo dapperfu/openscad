@@ -22,6 +22,13 @@ module mount_cube ( ) {
 
 //difference()
 
+cube(
+    [mount_edge,
+    mount_edge,
+    mount_height,
+    ],
+    center=true);
+
 
 /*
 {
