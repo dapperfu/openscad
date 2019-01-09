@@ -2,12 +2,13 @@
 $fn=12;
 mount_edge = 45;
 laser_edge = 40;
-gantry_mount_hole=4;
+gantry_mount_hole=3.4;
 laser_mount_hole=8;
 mount_height = 70;
 mount_thickness = 5;
 
 x = 55;
+y=47;
 module mount_cube ( ) { 
     cube(
     [mount_edge,
