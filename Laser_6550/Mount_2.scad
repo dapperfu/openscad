@@ -1,4 +1,3 @@
-
 $fn=12;
 mount_edge = 45;
 laser_edge = 40;
@@ -9,6 +8,8 @@ mount_thickness = 5;
 
 // = 55;
 // =47;
+
+/*
 module mount_cube ( ) { 
     cube(
     [mount_edge,
@@ -17,8 +18,12 @@ module mount_cube ( ) {
     ],
     center=false);
 }
+*/
 
 //difference()
+
+
+/*
 {
 translate( v = [0,
                 0,
@@ -60,7 +65,6 @@ translate([mount_edge-laser_edge/2-gantry_mount_hole
     }
 }
 }
-/*
 translate( v = [0,
                 0,
                 0] ) {
