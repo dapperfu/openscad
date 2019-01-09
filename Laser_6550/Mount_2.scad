@@ -24,7 +24,7 @@ module mount_cube ( ) {
 
 cube(
     [mount_edge,
-    mount_edge,
+    mount_thickness,
     mount_height,
     ],
     center=false);
