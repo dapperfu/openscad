@@ -22,13 +22,16 @@ module mount_cube ( ) {
 
 //difference()
 
-cube(
-    [mount_edge,
-    mount_thickness,
-    mount_height,
-    ],
-    center=false
+color("blue")
+{
+    cube(
+        [mount_edge,
+        mount_thickness,
+        mount_height,
+        ],
+        center=false
     );
+};
 
 color("red")
 {
