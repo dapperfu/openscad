@@ -7,6 +7,7 @@ laser_mount_hole=8;
 mount_height = 70;
 mount_thickness = 5;
 
+x = 55;
 module mount_cube ( ) { 
     cube(
     [mount_edge,
