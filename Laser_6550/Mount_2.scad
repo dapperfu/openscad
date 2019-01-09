@@ -16,7 +16,7 @@ module mount_cube ( ) {
     center=false);
 }
 
-difference()
+//difference()
 {
 translate( v = [0,
                 0,
