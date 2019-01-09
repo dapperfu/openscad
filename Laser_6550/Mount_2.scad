@@ -27,16 +27,20 @@ cube(
     mount_thickness,
     mount_height,
     ],
-    center=false);
-    
-cube(
-    [
-    mount_thickness,
-    mount_edge,
-    mount_height,
-    ],
-    center=false);
+    center=false
+    );
 
+color("red")
+{
+    cube(
+        [
+        mount_thickness,
+        mount_edge,
+        mount_height,
+        ],
+        center=false
+    );
+}
 
 /*
 {
