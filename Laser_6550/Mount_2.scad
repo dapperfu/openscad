@@ -49,17 +49,13 @@ color(laser_edge_color)
 {
     cube(
         [
+        laser_thickness,
         laser_length,
-        gantry_thickness,
         mount_height,
         ],
         center=false
     );
 }
-
-
-
-
 
 
 /*
