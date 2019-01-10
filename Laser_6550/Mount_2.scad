@@ -33,7 +33,8 @@ laser_mount_hole=8;
 // = 55;
 // = 47;
 
-
+//difference() 
+{
 color(laser_edge_color)
 {
     cube(
@@ -44,6 +45,10 @@ color(laser_edge_color)
         ],
         center=false
     );
+}
+
+
+
 }
 
 
