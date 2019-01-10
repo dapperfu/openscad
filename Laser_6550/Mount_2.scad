@@ -1,13 +1,17 @@
 $fn=12;
 
 /*
-# Gantry Edge
+# Gantry Edge Parameters
 
 The side that is towards the gantry.
 */
 gantry_edge_color = "blue";
 
-// Laser Edge
+/*
+# Laser Edge Parameters
+
+The side that is towards the Laser Module..
+*/
 laser_edge_color = "red";
 
 
