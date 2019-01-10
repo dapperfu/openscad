@@ -17,6 +17,8 @@ gantry_thickness = 5;
 
 gantry_mount_hole=3.4;
 
+//gantry_length = gantry_mount_hole*5;
+
 
 
 /*
