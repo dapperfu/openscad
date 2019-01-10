@@ -1,6 +1,10 @@
 $fn=12;
 
-// Gantry Edge
+/*
+# Gantry Edge
+
+The side that is towards the gantry.
+*/
 gantry_edge_color = "blue";
 
 // Laser Edge
