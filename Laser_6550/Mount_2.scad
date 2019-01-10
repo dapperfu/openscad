@@ -7,6 +7,7 @@ gantry_edge_color = "blue";
 laser_edge_color = "red";
 
 
+
 color(gantry_edge_color)
 {
     cube(
@@ -17,6 +18,19 @@ color(gantry_edge_color)
         center=false
     );
 };
+
+color(laser_edge_color)
+{
+    cube(
+        [
+        mount_thickness,
+        mount_edge,
+        mount_height,
+        ],
+        center=false
+    );
+}
+
 
 
 
@@ -44,19 +58,6 @@ module mount_cube ( ) {
 
 //difference()
 
-
-
-color("red")
-{
-    cube(
-        [
-        mount_thickness,
-        mount_edge,
-        mount_height,
-        ],
-        center=false
-    );
-}
 
 /*
 {
