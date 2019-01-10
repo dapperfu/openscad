@@ -12,7 +12,7 @@ mount_height = 70;
 The side that is towards the gantry.
 */
 gantry_edge_color = "blue";
-gantry_length = 40;
+gantry_length = 25;
 gantry_thickness = 5; 
 
 gantry_mount_hole=3.4;
