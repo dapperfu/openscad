@@ -47,7 +47,8 @@ color(laser_edge_color)
 }
 
 
-//difference()
+difference()
+{
 color(gantry_edge_color)
 {
     cube(
@@ -58,7 +59,6 @@ color(gantry_edge_color)
         center=false
     );
 };
-{
 
 union()
 {
