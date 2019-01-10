@@ -35,6 +35,9 @@ laser_mount_hole=8;
 // = 55;
 // = 47;
 
+union()
+{
+
 difference() 
 {
 color(laser_edge_color)
@@ -99,6 +102,7 @@ translate([gantry_length/2, gantry_thickness*1.01,gantry_mount_hole/2+mount_heig
             cylinder(h=gantry_thickness/2,d=3*gantry_mount_hole,center=false);
         }
     }
+}
 }
 }
 }
