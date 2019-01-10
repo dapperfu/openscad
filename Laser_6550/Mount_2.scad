@@ -72,7 +72,7 @@ translate([gantry_length/2, gantry_thickness, gantry_mount_hole/2+mount_height*.
         }
     }
 }
-translate([gantry_length/2, gantry_thickness+gantry_thickness/2*1.01,gantry_mount_hole/2+mount_height*.25/2]) {
+translate([gantry_length/2, gantry_thickness*1.01,gantry_mount_hole/2+mount_height*.25/2]) {
     color("red")
     rotate([90,-90,0]) {
         hull() {
