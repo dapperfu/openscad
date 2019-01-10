@@ -95,8 +95,8 @@ translate([gantry_length/2, gantry_thickness*1.01,gantry_mount_hole/2+mount_heig
     rotate([90,-90,0]) {
         hull() {
             translate([mount_height*.75-gantry_mount_hole,0,0]) 
-                cylinder(h=gantry_thickness/2,d=2*gantry_mount_hole,center=false);
-            cylinder(h=gantry_thickness/2,d=2*gantry_mount_hole,center=false);
+                cylinder(h=gantry_thickness/2,d=3*gantry_mount_hole,center=false);
+            cylinder(h=gantry_thickness/2,d=3*gantry_mount_hole,center=false);
         }
     }
 }
