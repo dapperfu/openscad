@@ -33,7 +33,7 @@ laser_mount_hole=8;
 // = 55;
 // = 47;
 
-//difference() 
+difference() 
 {
 color(laser_edge_color)
 {
@@ -47,7 +47,7 @@ color(laser_edge_color)
     );
 }
 
-translate([laser_length/2, laser_thickness, laser_mount_hole/2+mount_height*.25/2]) {
+translate([0, laser_length/2, laser_mount_hole/2+mount_height*.25/2]) {
     color("green")
     rotate([90,-90,90]) {
         hull() {
