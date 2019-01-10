@@ -61,7 +61,7 @@ color(laser_edge_color)
 }
 
 union() {
-translate([0, gantry_length/2,gantry_mount_hole/2+mount_height*.25/2]) {
+translate([0, laser_length/2,laser_mount_hole/2+mount_height*.25/2]) {
     color("green")
     rotate([90,-90,90]) {
         hull() {
