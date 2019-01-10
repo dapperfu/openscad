@@ -1,12 +1,22 @@
 $fn=12;
 
 /*
+# General Parameters
+*/
+
+mount_height = 70;
+
+/*
 # Gantry Edge Parameters
 
 The side that is towards the gantry.
 */
 gantry_edge_color = "blue";
-l_gantry = 47;
+gantry_length = 40;
+gantry_thickness = 5; 
+
+gantry_mount_hole=3.4;
+
 
 
 /*
@@ -16,13 +26,9 @@ l_gantry = 47;
 The side that is towards the Laser Module..
 */
 laser_edge_color = "red";
-l_laser = 40;
-
-
-gantry_mount_hole=3.4;
+laser_length = 40;
+laser_thickness = 5; 
 laser_mount_hole=8;
-mount_height = 70;
-mount_thickness = 5;
 
 // = 55;
 // = 47;
@@ -31,8 +37,8 @@ mount_thickness = 5;
 color(gantry_edge_color)
 {
     cube(
-        [mount_edge,
-        mount_thickness,
+        [gantry_length,
+        gantry_thickness,
         mount_height,
         ],
         center=false
@@ -43,8 +49,8 @@ color(laser_edge_color)
 {
     cube(
         [
-        mount_thickness,
-        mount_edge,
+        laser_length,
+        gantry_thickness,
         mount_height,
         ],
         center=false
