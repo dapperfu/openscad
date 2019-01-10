@@ -57,8 +57,8 @@ translate([0, laser_length/2*1.01, laser_mount_hole/2+mount_height*.25/2]) {
     rotate([90,-90,90]) {
         hull() {
             translate([mount_height*.75-laser_mount_hole,0,0]) 
-                cylinder(h=laser_thickness,d=laser_mount_hole,center=false);
-            cylinder(h=laser_thickness,d=laser_mount_hole,center=false);
+                cylinder(h=laser_thickness*1.1,d=laser_mount_hole,center=false);
+            cylinder(h=laser_thickness*1.1,d=laser_mount_hole,center=false);
         }
     }
 }
