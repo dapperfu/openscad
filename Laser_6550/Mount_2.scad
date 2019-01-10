@@ -1,9 +1,23 @@
 $fn=12;
 
 // Gantry Edge
-
+gantry_edge_color = "blue";
 
 // Laser Edge
+laser_edge_color = "red";
+
+
+color(gantry_edge_color)
+{
+    cube(
+        [mount_edge,
+        mount_thickness,
+        mount_height,
+        ],
+        center=false
+    );
+};
+
 
 
 
@@ -30,16 +44,7 @@ module mount_cube ( ) {
 
 //difference()
 
-color("blue")
-{
-    cube(
-        [mount_edge,
-        mount_thickness,
-        mount_height,
-        ],
-        center=false
-    );
-};
+
 
 color("red")
 {
