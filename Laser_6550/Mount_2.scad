@@ -1,4 +1,12 @@
 $fn=12;
+
+// Gantry Edge
+
+
+// Laser Edge
+
+
+
 mount_edge = 45;
 laser_edge = 40;
 gantry_mount_hole=3.4;
