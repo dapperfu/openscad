@@ -60,7 +60,7 @@ color(laser_edge_color)
 
 translate([gantry_length/2, 0, gantry_mount_hole/2+mount_height*.25/2]) {
     color("green")
-    rotate([90,-90,90]) {
+    rotate([90,90,0]) {
         hull() {
             translate([mount_height*.75-gantry_mount_hole,0,0]) 
                 cylinder(h=gantry_thickness,d=gantry_mount_hole,center=false);
