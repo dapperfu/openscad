@@ -28,7 +28,7 @@ gantry_length = gantry_mount_hole*6;
 The side that is towards the Laser Module..
 */
 laser_edge_color = "red";
-laser_length = 40;
+laser_length = 50;
 laser_thickness = 5; 
 laser_mount_hole=8;
 
