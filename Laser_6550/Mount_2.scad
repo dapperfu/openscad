@@ -45,7 +45,8 @@ color(gantry_edge_color)
     );
 };
 
-
+difference()
+{
 color(laser_edge_color)
 {
     cube(
@@ -58,6 +59,8 @@ color(laser_edge_color)
     );
 }
 
+union()
+{
 translate([gantry_length/2, gantry_thickness, gantry_mount_hole/2+mount_height*.25/2]) {
     color("green")
     rotate([90,-90,0]) {
@@ -78,7 +81,8 @@ translate([gantry_length/2, gantry_thickness+gantry_thickness/2*1.01,gantry_moun
         }
     }
 }
-
+}
+}
 /*
 module mount_cube ( ) { 
     cube(
