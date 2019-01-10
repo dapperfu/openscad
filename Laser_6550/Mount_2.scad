@@ -34,19 +34,6 @@ laser_mount_hole=8;
 // = 47;
 
 
-color(gantry_edge_color)
-{
-    cube(
-        [gantry_length,
-        gantry_thickness,
-        mount_height,
-        ],
-        center=false
-    );
-};
-
-difference()
-{
 color(laser_edge_color)
 {
     cube(
@@ -58,6 +45,20 @@ color(laser_edge_color)
         center=false
     );
 }
+
+
+//difference()
+color(gantry_edge_color)
+{
+    cube(
+        [gantry_length,
+        gantry_thickness,
+        mount_height,
+        ],
+        center=false
+    );
+};
+{
 
 union()
 {
