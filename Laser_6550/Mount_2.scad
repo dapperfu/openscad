@@ -61,7 +61,7 @@ color(laser_edge_color)
 }
 
 union() {
-translate([0, gantry_length/2,gantry_mount_hole/2+mount_height*.25/2]) {
+translate([gantry_length/2, 0, gantry_mount_hole/2+mount_height*.25/2]) {
     color("green")
     rotate([90,-90,90]) {
         hull() {
@@ -71,7 +71,7 @@ translate([0, gantry_length/2,gantry_mount_hole/2+mount_height*.25/2]) {
         }
     }
 }
-translate([gantry_thickness/2, gantry_length/2,gantry_mount_hole/2+mount_height*.25/2]) {
+translate([gantry_thickness/2*1.01, gantry_length/2,gantry_mount_hole/2+mount_height*.25/2]) {
     color("blue")
     rotate([90,-90,90]) {
         hull() {
