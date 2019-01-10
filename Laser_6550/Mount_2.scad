@@ -57,11 +57,11 @@ color(laser_edge_color)
     );
 }
 
-translate([0, 0,gantry_mount_hole/2]) {
+translate([0, 0,gantry_mount_hole/2+mount_height*.25]) {
     color("green")
     rotate([90,-90,90]) {
         hull() {
-            translate([mount_height*1.0-gantry_mount_hole,0,0]) 
+            translate([mount_height*.75-gantry_mount_hole,0,0]) 
                 cylinder(h=gantry_thickness,d=gantry_mount_hole,center=false);
             cylinder(h=gantry_thickness,d=gantry_mount_hole,center=false);
         }
