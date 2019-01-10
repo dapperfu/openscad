@@ -71,13 +71,13 @@ translate([0, gantry_length/2,gantry_mount_hole/2+mount_height*.25/2]) {
         }
     }
 }
-translate([gantry_thickness/2, gantry_length/2,gantry_mount_hole/2+mount_height*.25/2]) {
+translate([gantry_thickness/2*1.01, gantry_length/2,gantry_mount_hole/2+mount_height*.25/2]) {
     color("blue")
     rotate([90,-90,90]) {
         hull() {
             translate([mount_height*.75-gantry_mount_hole,0,0]) 
-                cylinder(h=gantry_thickness/2,d=1.5*gantry_mount_hole,center=false);
-            cylinder(h=gantry_thickness/2,d=1.5*gantry_mount_hole,center=false);
+                cylinder(h=gantry_thickness/2,d=2*gantry_mount_hole,center=false);
+            cylinder(h=gantry_thickness/2,d=2*gantry_mount_hole,center=false);
         }
     }
 }
