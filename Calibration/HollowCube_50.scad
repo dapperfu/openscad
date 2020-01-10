@@ -52,7 +52,7 @@ translate( v = [edge - pillars,
     cube(
         [pillars,
         pillars,
-        edge,
+        2* edge,
         ],
         center=false);
 }

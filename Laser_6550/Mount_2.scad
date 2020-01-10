@@ -20,6 +20,12 @@ gantry_mount_hole=3.4;
 gantry_length = gantry_mount_hole*6;
 
 
+//
+
+gantry_washer_id = 3.1;
+gantry_washer_od = 6.5;
+
+
 
 /*
 # Laser Edge Parameters
