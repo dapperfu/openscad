@@ -1,1 +1,0 @@
-/home/j/.Slic3r/make_tool/slice_all.sh
