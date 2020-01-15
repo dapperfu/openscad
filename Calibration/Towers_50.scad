@@ -1,12 +1,26 @@
 edge = 50;
 pillars= 10;
 
+
+difference () {
 cube(
     [edge,
     edge,
     pillars,
     ],
     center=false);
+    
+    
+color("blue") {
+translate( v = [edge/2, edge /2, -edge/2] ) {
+cylinder(
+r=pillars,
+h=edge,
+center=false,
+$fn=100);
+}
+}
+}
     
 cube(
     [pillars,
@@ -19,7 +33,7 @@ translate( v = [edge - pillars, edge - pillars, 0] ) {
 translate( v = [pillars/2,pillars/2,0] ) {
     cylinder(
     r=pillars/2,
-    h=edge*0.75,
+    h=edge,
     center=false,
     $fn=100);
 }
@@ -29,7 +43,7 @@ translate( v = [0, edge - pillars, 0] ) {
     cube(
     [pillars,
     pillars,
-    edge*0.50,
+    edge,
     ],
     center=false);
 }
@@ -47,4 +61,15 @@ translate([-pillars/2, -pillars/2, 0]) {
 }
 }
 }
+}
+
+translate( v = [edge - pillars, edge - pillars, 0] ) {
+    translate( v = [pillars/2,pillars/2,0] ) {
+        cylinder(
+            r=pillars/2,
+            h=edge,
+            center=false,
+            $fn=100
+        );
+    }
 }

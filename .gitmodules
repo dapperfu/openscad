@@ -4,9 +4,6 @@
 [submodule "openscad_DEVKIT-MPC57xx"]
 	path = openscad_DEVKIT-MPC57xx
 	url = https://github.com/jed-frey/openscad_DEVKIT-MPC57xx
-[submodule "slic3r_profiles"]
-	path = slic3r_profiles
-	url = https://github.com/jed-frey/slic3r_profiles.git
 [submodule "Trailer/.mk_inc"]
 	path = Trailer/.mk_inc
 	url = https://github.com/jed-frey/make_sandwich.git
