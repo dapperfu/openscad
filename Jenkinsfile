@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Slice All') {
+      steps {
+        sh 'BUILD_DEST=${HOME}/.octoprint/uploads ./slice_all.sh'
+      }
+    }
+
   }
 }
