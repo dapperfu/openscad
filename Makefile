@@ -26,6 +26,14 @@ stl: ${STL}
 
 %.stl: %.scad
 	openscad -o ${@} ${<}
+	
+.PHONY: debug
+debug:
+	$(info $${PNG}=${PNG})
+	
+.PHONY: previews
+previews: png
+	bash previews.sh ${PNG}
 
 ## Utility Targets
 
@@ -33,5 +41,7 @@ stl: ${STL}
 .PHONY: clean
 clean:
 	@git clean -xfd
+	
+
 
 include ~/.Slic3r/make_tool/slice.mk
