@@ -18,7 +18,7 @@ R2 = R+2;
 
 L = 20;
 difference() {
-cylinder(h=L, r=R2+2, center=false);
+cylinder(h=L, r=R2+5, center=false);
 cylinder(h=L, r=R2, center=false);
 
 }
