@@ -1,6 +1,4 @@
 **/*.stl
-**/.venv
 **/*.gcode
-**/*.png
 **/build/*
 **/.ipynb_checkpoints/*
