@@ -6,11 +6,11 @@ GitHub repository for my OpenSCAD models with slic3r make
 
 1. Clone repository:
 
-    ```git clone https://github.com/jed-frey/openscad.git```
+    ```git clone https://github.com/dapperfu/openscad.git```
 
 1. Have Slic3r make tool installed in ~./Slic3r/make_tool
 
-    ```git clone https://github.com/jed-frey/slic3r_profiles.git ~/.Slic3r/make_tool```
+    ```git clone https://github.com/dapperfu/slic3r_profiles.git ~/.Slic3r/make_tool```
 
 1. Add or modify any ```.scad``` model with openscad.
 
@@ -18,6 +18,10 @@ GitHub repository for my OpenSCAD models with slic3r make
     1. G-code willl be in the ```build/``` directory.
     2. ```.stl``` files will be next to the ```.scad``` files.
     3. ```.png``` images will be next to the ```.scad``` files.
+    
+2. Make [previews.md](previews.md)
+
+    make previews
     
 ## Slice All Configs
 
